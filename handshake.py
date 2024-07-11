@@ -52,7 +52,6 @@ st.sidebar.markdown("MVP built with ❤️ [Utkarsh Khandelwal](mailto:ukhandelw
 
 st.title("Dexter! Your Handshake Assistant")
 st.write("Welcome! My name is Dexter - I'm here to help you navigate your career journey and make the most of Handshake.")
-st. write("Dexter was created to enhance the Handshake user experience for job-seeking college students. Students relies on university career services for best practices to use handshake, and for career tips. Dexter can provide valuable career tips, provide resume feedback, and offers strategies to use Handshake effectively for job search.")
 
 if st.button("Exit Chat"):
     st.session_state.messages = []  # Clear the chat history
