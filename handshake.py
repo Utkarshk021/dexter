@@ -85,7 +85,7 @@ if st.session_state.authenticated and st.session_state.start_chat:
         with st.chat_message("assistant"):
             st.write_stream(typing_effect(initial_message))
 
-        summary_message = "Feel free to ask me about career tips, writing cold emails, reaching out to recruiters, and more."
+        summary_message = "Feel free to ask me about career tips, handshake tips, reaching out to recruiters, and more."
         st.session_state.messages.append({"role": "assistant", "content": summary_message})
         with st.chat_message("assistant"):
             st.write_stream(typing_effect(summary_message))
@@ -94,29 +94,29 @@ if st.session_state.authenticated and st.session_state.start_chat:
     if not st.session_state.buttons_shown:
         col1, col2 = st.columns(2)
         with col1:
-            if st.button("Optimize Handshake profile"):
+            if st.button("How to Optimize Handshake profile"):
                 st.session_state.prompt = "How to optimize my Handshake profile to attract more employers?"
                 st.session_state.buttons_shown = True
-            if st.button("Tailor resume for job posting"):
+            if st.button("How to Tailor resume for job posting"):
                 st.session_state.prompt = "How do I tailor my resume for a specific job posting on Handshake?"
                 st.session_state.buttons_shown = True
-            if st.button("Stand out in virtual career fairs"):
+            if st.button("How to Stand out in virtual career fairs"):
                 st.session_state.prompt = "What strategies can I use to stand out in virtual career fairs?"
                 st.session_state.buttons_shown = True
-            if st.button("Update Handshake profile frequency"):
+            if st.button("How often to Update Handshake profile"):
                 st.session_state.prompt = "How often should I update my Handshake profile?"
                 st.session_state.buttons_shown = True
         with col2:
-            if st.button("Network with alumni"):
+            if st.button("How to Network with alumni"):
                 st.session_state.prompt = "What are some effective ways to network with alumni?"
                 st.session_state.buttons_shown = True
-            if st.button("Use Handshake messaging"):
+            if st.button("How to use Handshake messaging"):
                 st.session_state.prompt = "How can I use Handshake's messaging feature to connect with recruiters professionally?"
                 st.session_state.buttons_shown = True
-            if st.button("Find mentorship opportunities"):
+            if st.button("How to find mentorship opportunities"):
                 st.session_state.prompt = "How can I use Handshake to find mentorship opportunities in my industry?"
                 st.session_state.buttons_shown = True
-            if st.button("Research potential employers"):
+            if st.button("Using Handshake to research potential employers"):
                 st.session_state.prompt = "How can I use Handshake to research potential employers before applying?"
                 st.session_state.buttons_shown = True
 
