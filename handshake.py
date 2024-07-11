@@ -116,7 +116,7 @@ if st.session_state.authenticated and st.session_state.start_chat:
             if st.button("How to find mentorship opportunities"):
                 st.session_state.prompt = "How can I use Handshake to find mentorship opportunities in my industry?"
                 st.session_state.buttons_shown = True
-            if st.button("Using Handshake to research potential employers"):
+            if st.button("Handshake to research potential employers"):
                 st.session_state.prompt = "How can I use Handshake to research potential employers before applying?"
                 st.session_state.buttons_shown = True
 
